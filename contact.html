@@ -57,11 +57,16 @@
           </form>
         </div>
 
-        <!-- 오시는 길: 네이버/카카오/구글 지도에서 '공유 > HTML 태그 복사'로 받은 iframe으로 교체 -->
+        <!-- 오시는 길: 구글 지도 정식 삽입 주소(/maps/embed). maps?q=...&output=embed 방식은 휴대폰에서 차단됨 -->
         <h2 style="margin-top: 72px;">오시는 길</h2>
         <div class="map">
-          <iframe src="https://www.google.com/maps?q=경기도+성남시+중원구+둔촌대로+545&output=embed" loading="lazy" title="회사 위치 지도"></iframe>
+          <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1z6rK96riw64-EIOyEseuCqOyLnCDspJHsm5Dqtawg65GU7LSM64yA66GcIDU0NQ!6i17!3m1!1sko!5m1!1sko" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="회사 위치 지도"></iframe>
         </div>
+        <p style="margin-top: 12px;">
+          지도가 보이지 않으면
+          <a href="https://map.naver.com/p/search/경기도 성남시 중원구 둔촌대로 545" target="_blank" rel="noopener" style="color: var(--color-primary); font-weight: 600;">네이버 지도에서 보기</a> ·
+          <a href="https://map.kakao.com/?q=경기도 성남시 중원구 둔촌대로 545" target="_blank" rel="noopener" style="color: var(--color-primary); font-weight: 600;">카카오맵에서 보기</a>
+        </p>
       </div>
     </section>
   </main>
