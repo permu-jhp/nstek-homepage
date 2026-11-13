@@ -70,6 +70,18 @@ img { max-width: 100%; display: block; }
 .nav a:hover,
 .nav a.active { color: var(--color-primary); }
 
+.nav { margin-left: auto; }
+
+/* 한국어 / 영어 전환 */
+.lang { display: flex; gap: 4px; margin-left: 28px; font-size: 0.85rem; }
+.lang a {
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+.lang a.current { background: var(--color-primary); color: #fff; }
+
 .menu-toggle {
   display: none;
   background: none;
@@ -178,6 +190,56 @@ img { max-width: 100%; display: block; }
 .card-photo img { width: 100%; height: 180px; object-fit: cover; background: var(--color-bg-soft); }
 .card-photo .card-body { padding: 24px 24px 28px; }
 .card-photo .more { display: inline-block; margin-top: 12px; color: var(--color-primary); font-weight: 600; }
+
+/* 제품 카드: 사진이 잘리지 않게 전체를 보여줌 */
+.products .card-photo img {
+  height: 210px;
+  object-fit: contain;
+  padding: 12px;
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+}
+.products .card h3 { font-size: 1.1rem; }
+.card .meta { margin-top: 10px; font-size: 0.9rem; color: var(--color-primary-dark); }
+
+/* 사업분야 페이지 구역 제목 */
+.group-title { margin: 0 0 8px; font-size: 1.6rem; scroll-margin-top: calc(var(--header-height) + 16px); }
+.group-title + p { color: var(--color-muted); margin-bottom: 32px; }
+.group + .group { margin-top: 96px; }
+
+/* ---------- 조직도 ---------- */
+.org { text-align: center; }
+.org .box {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+}
+.org .line { width: 2px; height: 24px; margin: 0 auto; background: var(--color-border); }
+.org-units {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+  text-align: left;
+}
+.org-units div {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+}
+.org-units b { display: block; margin-bottom: 6px; }
+.org-units span { color: var(--color-muted); font-size: 0.95rem; }
+
+/* 회사 개요 표 */
+.overview { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; }
+.overview th,
+.overview td { padding: 14px 16px; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.overview th { width: 140px; color: var(--color-primary-dark); white-space: nowrap; }
 
 /* ---------- 제품 소개 (사업분야 페이지) ---------- */
 .product {
@@ -444,6 +506,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .menu-toggle { display: block; }
   .logo img { height: 32px; }
+  .lang { margin-left: auto; margin-right: 12px; }
 
   .nav {
     display: none;
@@ -467,4 +530,5 @@ img { max-width: 100%; display: block; }
   .product { grid-template-columns: 1fr; gap: 24px; padding: 40px 0; }
   .product:nth-child(even) .product-img { order: 0; }
   .product h3 { font-size: 1.35rem; }
+  .overview th { width: 84px; padding-right: 8px; }
 }
