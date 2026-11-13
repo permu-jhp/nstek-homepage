@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>실적·고객사 | NSTEK</title>
+  <meta name="description" content="(주)엔에스텍 철도차량 시험기·부품 국내외 납품 실적, 주요 발주처, 글로벌 파트너">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,48 +27,323 @@
   <main>
     <section class="page-banner">
       <h1>실적·고객사</h1>
-      <p>NSTEK과 함께한 프로젝트</p>
+      <p>전국 차량기지와 해외 철도에 납품한 실적입니다</p>
     </section>
 
-    <!-- 주요 실적 -->
+    <!-- 주요 발주처 -->
     <section class="section">
       <div class="container">
         <div class="section-title">
-          <h2>주요 실적</h2>
+          <h2>주요 발주처</h2>
         </div>
-        <div class="grid">
+        <div class="logo-grid">
+          <div>서울교통공사</div>
+          <div>한국철도공사</div>
+          <div>인천교통공사</div>
+          <div>(주)다원시스</div>
+          <div>우진산전</div>
+          <div>금천씨스템</div>
+          <div>샬롬ENG</div>
+          <div>코리아징코리아</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 해외 납품 -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-title">
+          <h2>해외 납품</h2>
+        </div>
+        <div class="overseas">
           <div class="card">
-            <p style="color: var(--color-primary); font-weight: 600;">2026</p>
-            <h3>[프로젝트명]</h3>
-            <p>[고객사] · 프로젝트 내용 요약</p>
+            <h3>카자흐스탄 알마티 <small>2010</small></h3>
+            <p>(주)소명 발주 · 9건</p>
+            <p style="margin-top: 8px;">초음파탐상장치, TM 시험기, CM 시험기, 계전기시험기, 배선용차단기시험기, 제동밸브시험기, 충방전기, 내압시험기, 방송장치시험기</p>
           </div>
           <div class="card">
-            <p style="color: var(--color-primary); font-weight: 600;">2025</p>
-            <h3>[프로젝트명]</h3>
-            <p>[고객사] · 프로젝트 내용 요약</p>
-          </div>
-          <div class="card">
-            <p style="color: var(--color-primary); font-weight: 600;">2025</p>
-            <h3>[프로젝트명]</h3>
-            <p>[고객사] · 프로젝트 내용 요약</p>
+            <h3>인도네시아 자카르타 MRT <small>2017–2018</small></h3>
+            <p>금천씨스템(주) · (주)우진산전 발주 · 5건</p>
+            <p style="margin-top: 8px;">계전기시험기, 차단기시험기, 피뢰기시험기, 오일댐퍼시험기</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 고객사 로고: 이미지가 생기면 <div> 안에 <img src="images/logo-xxx.png" alt="고객사명"> 로 교체 -->
+    <!-- 국내 납품 실적: 행은 <tr><td>연도</td><td>품명</td><td>수량</td><td>납품처</td><td>발주처</td></tr> 형식 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>국내 납품 실적</h2>
+          <p>2007년 ~ 2020년</p>
+        </div>
+        <div class="records-tools">
+          <input type="search" id="records-search" placeholder="품명, 납품처, 발주처, 연도 검색" aria-label="납품 실적 검색">
+          <span id="records-count"></span>
+        </div>
+        <div class="table-wrap">
+          <table class="records" id="records">
+            <thead>
+              <tr><th>연도</th><th>품명</th><th>수량</th><th>납품처</th><th>발주처</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2020</td><td>인버터시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>SIV시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>차단기시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>제동 종합시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>제동 밸브 시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>블록브레이크 시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>브레이크실린더시험기</td><td>1</td><td>신정기지</td><td>서울교통공사</td></tr>
+              <tr><td>2020</td><td>계전기시험기</td><td>1</td><td>군자기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2020</td><td>계전기시험기</td><td>1</td><td>이문기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2020</td><td>오일댐퍼시험기</td><td>1</td><td>공항철도</td><td>샬롬ENG</td></tr>
+              <tr><td>2019</td><td>감속기시험기</td><td>1</td><td>부산기지</td><td>한국철도공사</td></tr>
+              <tr><td>2019</td><td>견인전동기시험기</td><td>1</td><td>도봉기지</td><td>서울교통공사</td></tr>
+              <tr><td>2019</td><td>점퍼연결기시험기</td><td>1</td><td>고덕기지</td><td>서울교통공사</td></tr>
+              <tr><td>2019</td><td>제동밸브류 시험장치</td><td>1</td><td>수서기지</td><td>서울교통공사</td></tr>
+              <tr><td>2019</td><td>오일댐퍼시험기</td><td>1</td><td>제천기지</td><td>한국철도공사</td></tr>
+              <tr><td>2019</td><td>주간제어기시험기</td><td>1</td><td>문산기지</td><td>한국철도공사</td></tr>
+              <tr><td>2019</td><td>위건드센서 시험기</td><td>1</td><td>고양기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2019</td><td>냉난방제어기</td><td>18</td><td>석남선</td><td>(주)다원시스</td></tr>
+              <tr><td>2019</td><td>객실 온도 및 co2센서</td><td>32</td><td>석남선</td><td>(주)다원시스</td></tr>
+              <tr><td>2019</td><td>객실 온도센서</td><td>32</td><td>석남선</td><td>(주)다원시스</td></tr>
+              <tr><td>2019</td><td>외기 온도센서</td><td>8</td><td>석남선</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>제동장치제어기 시험장치(ECU)</td><td>1</td><td>지축기지</td><td>서울교통공사</td></tr>
+              <tr><td>2018</td><td>방송장치시험기</td><td>1</td><td>창동기지</td><td>서울교통공사</td></tr>
+              <tr><td>2018</td><td>교류피뢰기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>주회로차단기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>배선용차단기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>변압기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>객실서비스장치시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>차단기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>계전기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>방송기기시험기</td><td>1</td><td>덕하</td><td>우진산전</td></tr>
+              <tr><td>2018</td><td>도유기시험기</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>오일댐퍼시험기</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>차압변시험기</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>판토그래프시험기(겸용)</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>주간/제동시험기</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>점퍼연결기시험기(겸용)</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>보조전동기시험기</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>주공기/보조공기압축기시험기</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>내압시험기(10kva)</td><td>1</td><td>덕하</td><td>금천씨스템</td></tr>
+              <tr><td>2018</td><td>오일댐퍼시험기</td><td>1</td><td>시흥기지</td><td>한국철도공사</td></tr>
+              <tr><td>2018</td><td>측출입문장치시험기</td><td>1</td><td>시흥기지</td><td>한국철도공사</td></tr>
+              <tr><td>2018</td><td>냉난방배전반</td><td>200</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>배전반(TC CAR)</td><td>40</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>배전반(M1, M2 CAR)</td><td>100</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>배전반(T1, T2 CAR)</td><td>60</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>CO2 및 온습도센서</td><td>400</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>온습도센서</td><td>400</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2018</td><td>외기온도센서박스</td><td>40</td><td>2호선 전동차</td><td>(주)다원시스</td></tr>
+              <tr><td>2017</td><td>자분탐상기</td><td>1</td><td>지축기지</td><td>서울메트로</td></tr>
+              <tr><td>2017</td><td>SIV제어유니트시험기</td><td>1</td><td>창동기지</td><td>서울메트로</td></tr>
+              <tr><td>2017</td><td>피뢰기시험기</td><td>1</td><td>김포경전철</td><td>우진산전</td></tr>
+              <tr><td>2017</td><td>차단기/배선용차단기시험기</td><td>1</td><td>김포경전철</td><td>우진산전</td></tr>
+              <tr><td>2017</td><td>계전기시험기</td><td>1</td><td>김포경전철</td><td>금천씨스템</td></tr>
+              <tr><td>2017</td><td>주간제어기시험기</td><td>1</td><td>김포경전철</td><td>금천씨스템</td></tr>
+              <tr><td>2017</td><td>내압시험기</td><td>1</td><td>김포경전철</td><td>금천씨스템</td></tr>
+              <tr><td>2017</td><td>집전기시험기</td><td>1</td><td>김포경전철</td><td>금천씨스템</td></tr>
+              <tr><td>2017</td><td>공기스프링탄성시험기</td><td>1</td><td>시흥기지</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>레벨링밸브시험기</td><td>1</td><td>시흥기지</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>팬터그래프시험기</td><td>1</td><td>시흥기지</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>구동기어조립체 무부하시험기</td><td>1</td><td>평내기지</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>계전기시험기</td><td>1</td><td>고양기지</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>계전기시험기</td><td>1</td><td>부산</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>접촉기시험기</td><td>1</td><td>부산</td><td>한국철도공사</td></tr>
+              <tr><td>2017</td><td>계전기크리너시험기</td><td>1</td><td>호남선</td><td>한국철도공사</td></tr>
+              <tr><td>2016.03</td><td>방송장치시험기</td><td>1</td><td>이문기지</td><td>한터기술</td></tr>
+              <tr><td>2016.03</td><td>주간제어기시험기</td><td>1</td><td>이문기지</td><td>메트로텍</td></tr>
+              <tr><td>2016.03</td><td>점퍼연결기시험기</td><td>1</td><td>이문기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2016.03</td><td>주회로차단기시험기</td><td>1</td><td>이문기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2016</td><td>객실서비스장치시험기</td><td>1</td><td>부발기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>ATS/ATC 종합시험기</td><td>1</td><td>부발기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>ATS/ATC 간이시험기</td><td>1</td><td>부발기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>내압시험기</td><td>1</td><td>부발기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>SIV시험기</td><td>1</td><td>부발기지</td><td>창성엔지니어링</td></tr>
+              <tr><td>2016</td><td>VVVF C/I 시험기</td><td>1</td><td>부발기지</td><td>창성엔지니어링</td></tr>
+              <tr><td>2016</td><td>ATS/ATC종합시험기</td><td>1</td><td>부발기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>ATS/ATC간이시험기</td><td>1</td><td>부발기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>충방전기</td><td>1</td><td>부발기지</td><td>(주)미래로</td></tr>
+              <tr><td>2016</td><td>주간제어기시험기</td><td>1</td><td>이문기지</td><td>(주)메트로텍</td></tr>
+              <tr><td>2016</td><td>방송장치시험기</td><td>1</td><td>이문기지</td><td>한터기술</td></tr>
+              <tr><td>2016</td><td>점퍼연결기시험기</td><td>1</td><td>이문기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2016</td><td>주회로차단기시험기</td><td>1</td><td>이문기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2016</td><td>계전기시험기</td><td>1</td><td>부산1호선다대기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2016</td><td>TGIS시험기</td><td>1</td><td>시흥기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>방송장치시험기</td><td>1</td><td>시흥기지</td><td>미래일(주)</td></tr>
+              <tr><td>2016</td><td>전압/전류 검출센서 점검용시험기</td><td>1</td><td>수서기지</td><td>서울메트로</td></tr>
+              <tr><td>2016</td><td>추진제어장치시험기</td><td>1</td><td>부산1호선다대기지</td><td>우진기전</td></tr>
+              <tr><td>2016</td><td>점퍼카플러시험기</td><td>1</td><td>부산1호선다대기지</td><td>우진기전</td></tr>
+              <tr><td>2016</td><td>방송장치및표시기시험기</td><td>1</td><td>부산1호선다대기지</td><td>우진기전</td></tr>
+              <tr><td>2016</td><td>판타그래프시험기</td><td>1</td><td>부산1호선다대기지</td><td>샬롬</td></tr>
+              <tr><td>2016</td><td>계전기시험기</td><td>1</td><td>시흥기지</td><td>우진산전</td></tr>
+              <tr><td>2016</td><td>주간제어기시험기</td><td>1</td><td>시흥기지</td><td>우진산전</td></tr>
+              <tr><td>2016</td><td>충방전장치(충방전기)</td><td>1</td><td>이문기지</td><td>우진산전</td></tr>
+              <tr><td>2016</td><td>충방전기</td><td>1</td><td>귤현기지</td><td>인천교통공사</td></tr>
+              <tr><td>2015</td><td>배선용차단기시험기</td><td>1</td><td>대구기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2015</td><td>점퍼연결기시험기</td><td>1</td><td>대구기지</td><td>우진기지</td></tr>
+              <tr><td>2015</td><td>차단기시험기</td><td>1</td><td>대구기지</td><td>우진기지</td></tr>
+              <tr><td>2015</td><td>방송기기/표시기 시험기</td><td>1</td><td>대구기지</td><td>우진기지</td></tr>
+              <tr><td>2015</td><td>집전장치시험기</td><td>1</td><td>대구기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2015</td><td>내압시험기</td><td>1</td><td>우이기지</td><td>금천씨스템</td></tr>
+              <tr><td>2015</td><td>계전기시험기</td><td>1</td><td>도봉기지</td><td>서울도시철도</td></tr>
+              <tr><td>2015</td><td>인버터제어카드시험기</td><td>1</td><td>군자기지</td><td>서울메트로</td></tr>
+              <tr><td>2015</td><td>C/I장치 통합시뮬레이터</td><td>1</td><td>창동기지</td><td>서울메트로</td></tr>
+              <tr><td>2015</td><td>견인전동기시험기</td><td>1</td><td>시흥기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2015</td><td>TM시험기</td><td>1</td><td>인천2호선</td><td>샬롬ENG</td></tr>
+              <tr><td>2015</td><td>TCMS 시험기</td><td>1</td><td>인천2호선</td><td>샬롬ENG</td></tr>
+              <tr><td>2015</td><td>SIV시험기</td><td>1</td><td>인천2호선</td><td>샬롬ENG</td></tr>
+              <tr><td>2015</td><td>VVVF시험기</td><td>1</td><td>인천2호선</td><td>샬롬ENG</td></tr>
+              <tr><td>2014</td><td>공기압축기시험기</td><td>1</td><td>고양기지</td><td>금천씨스템</td></tr>
+              <tr><td>2014</td><td>HVAC 시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2014</td><td>비상끝단출입문시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2014</td><td>코니컬고무스프링시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2014</td><td>초음파탐상기</td><td>1</td><td>인천2호선</td><td>샬롬ENG</td></tr>
+              <tr><td>2014</td><td>SIV 시험기</td><td>1</td><td>도봉기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2013</td><td>내압시험기(10kva)</td><td>2</td><td>광주차량기지</td><td>금천씨스템</td></tr>
+              <tr><td>2013</td><td>접촉기시험기</td><td>1</td><td>광주차량기지</td><td>금천씨스템</td></tr>
+              <tr><td>2013</td><td>계전기시험기</td><td>1</td><td>광주차량기지</td><td>금천씨스템</td></tr>
+              <tr><td>2013</td><td>견인전동기시험기</td><td>1</td><td>분당기지</td><td>진흥알에스</td></tr>
+              <tr><td>2013</td><td>주회로차단기시험기</td><td>1</td><td>분당기지</td><td>진흥알에스</td></tr>
+              <tr><td>2013</td><td>보조전동기시험기</td><td>1</td><td>분당기지</td><td>진흥알에스</td></tr>
+              <tr><td>2013</td><td>교류피뢰기시험기</td><td>1</td><td>분당기지</td><td>진흥알에스</td></tr>
+              <tr><td>2013</td><td>내압시험기 (3kva)</td><td>1</td><td>분당기지</td><td>진흥알에스</td></tr>
+              <tr><td>2013</td><td>내압시험기 (10kva)</td><td>2</td><td>분당기지</td><td>진흥알에스</td></tr>
+              <tr><td>2013</td><td>라인데리아시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>점퍼연결기시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>자분탐상기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>변압기시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>판타그래프시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>계전기시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>배선용차단기시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>차단기시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>방송장치시험기</td><td>1</td><td>분당기지</td><td>코리아징코리아</td></tr>
+              <tr><td>2013</td><td>제동기시험기수선</td><td>1</td><td>군자기지</td><td>서울메트로</td></tr>
+              <tr><td>2013</td><td>연결장치시험기</td><td>1</td><td>이문기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2013</td><td>ATS결합도시험기수선</td><td>1</td><td>신정기지</td><td>서울메트로</td></tr>
+              <tr><td>2012</td><td>전동차시험기(고)</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2012</td><td>주간제동시험기</td><td>1</td><td>평내기지</td><td>금천시스템</td></tr>
+              <tr><td>2012</td><td>차압변밸브시험기</td><td>1</td><td>평내기지</td><td>제이레일</td></tr>
+              <tr><td>2012</td><td>판토그래프시험기</td><td>1</td><td>평내기지</td><td>제이레일</td></tr>
+              <tr><td>2012</td><td>레벨링밸브시험기</td><td>1</td><td>평내기지</td><td>제이레일</td></tr>
+              <tr><td>2012</td><td>도유기시험기</td><td>1</td><td>평내기지</td><td>블루텍플러스</td></tr>
+              <tr><td>2012</td><td>오일댐버시험기</td><td>1</td><td>평내기지</td><td>블루텍플러스</td></tr>
+              <tr><td>2012</td><td>차단기시험기(고)</td><td>1</td><td>평내기지</td><td>우진산전</td></tr>
+              <tr><td>2012</td><td>유압식자동연결기시험기</td><td>1</td><td>평내기지</td><td>진흥알에스</td></tr>
+              <tr><td>2012</td><td>공기압축기시험기</td><td>1</td><td>시흥기지</td><td>코레일</td></tr>
+              <tr><td>2012</td><td>ATC종합시험기</td><td>1</td><td>분당기지</td><td>샬롬ENG</td></tr>
+              <tr><td>2012</td><td>SIV시험기</td><td>2</td><td>군자기지</td><td>서울메트로</td></tr>
+              <tr><td>2012</td><td>SIV시험기</td><td>1</td><td>신정기지</td><td>서울메트로</td></tr>
+              <tr><td>2011</td><td>견인전동기시험기</td><td>1</td><td>제천기지</td><td>금천씨스템</td></tr>
+              <tr><td>2011</td><td>MVMT시험</td><td>1</td><td>제천기지</td><td>금천씨스템</td></tr>
+              <tr><td>2011</td><td>MVRH/MBRF 시험기</td><td>1</td><td>제천기지</td><td>금천씨스템</td></tr>
+              <tr><td>2011</td><td>점퍼시험기</td><td>2</td><td>지축,군자</td><td>우진기전</td></tr>
+              <tr><td>2011</td><td>진공밸브시험기</td><td>1</td><td>지축기지</td><td>우진기전</td></tr>
+              <tr><td>2011</td><td>서비스종합장치시험기</td><td>2</td><td></td><td>우진기전</td></tr>
+              <tr><td>2011</td><td>SIV 시험기</td><td>1</td><td>지축기지</td><td>샬롬</td></tr>
+              <tr><td>2011</td><td>ATC시험기</td><td>1</td><td>지축기지</td><td>샬롬</td></tr>
+              <tr><td>2011</td><td>공기압축기시험기</td><td>1</td><td>분당기지</td><td>블루텍플러스</td></tr>
+              <tr><td>2011</td><td>공기압축기시험기</td><td>1</td><td>평내기지</td><td>대우엔지니어링</td></tr>
+              <tr><td>2011</td><td>보조공기압축기시험기</td><td>1</td><td>평내기지</td><td>대우엔지니어링</td></tr>
+              <tr><td>2011</td><td>보조전동기시험기</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2011</td><td>주회로차단기시험기</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2011</td><td>계전기시험기</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2011</td><td>차단기시험기</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2011</td><td>교류피뢰기시험기</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2011</td><td>방송장치시험기</td><td>1</td><td>평내기지</td><td>렘코</td></tr>
+              <tr><td>2010</td><td>충,방전기</td><td>1</td><td>평내기지</td><td>우진산전</td></tr>
+              <tr><td>2010</td><td>SIV 시험기</td><td>1</td><td>군자기지</td><td>샬롬</td></tr>
+              <tr><td>2010</td><td>충전발전기</td><td>1</td><td>대전기지</td><td>샬롬</td></tr>
+              <tr><td>2010</td><td>전자식차단검사시험기</td><td>1</td><td>시흥기지</td><td>샬롬</td></tr>
+              <tr><td>2010</td><td>PMC승강대도어엔진시험기</td><td>1</td><td>대전기지</td><td>금천시스템</td></tr>
+              <tr><td>2010</td><td>PMC객실실린더시험기</td><td>1</td><td>대전기지</td><td>금천시스템</td></tr>
+              <tr><td>2010</td><td>내압시험기(3KVA)</td><td>1</td><td>대전기지</td><td>금천시스템</td></tr>
+              <tr><td>2010</td><td>SIV 시험기</td><td>1</td><td>경의선전동차사무소</td><td>(주)대우건설</td></tr>
+              <tr><td>2009</td><td>에어콘시험기</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>제동종합시험기</td><td>1</td><td>분당기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>KTX TM시험기</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>츌입문시험기</td><td>1</td><td>이문기지</td><td>코레일</td></tr>
+              <tr><td>2009</td><td>충,방전기</td><td>2</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>주공기압축기시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>주전동기시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>점퍼시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>계전기시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>집전장치시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>차단기시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>충,방전기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>CCU 시험기</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>CCU 시험기 이동식</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>CCU 지상해석장치</td><td>1</td><td>김해기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>주전동기시험기</td><td>1</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>보조전동기시험기</td><td>1</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>변압기 시험기</td><td>1</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>주전동기작업대</td><td>16</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>변압기저장대</td><td>4</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>주전동기저장대</td><td>4</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2009</td><td>KTX제어대시험기</td><td>1</td><td>고양기지</td><td>금천시스템</td></tr>
+              <tr><td>2009</td><td>KTX접촉기시험기</td><td>1</td><td>고양기지</td><td>금천시스템</td></tr>
+              <tr><td>2009</td><td>KTX방송장치시험기</td><td>1</td><td>고양기지</td><td>금천시스템</td></tr>
+              <tr><td>2009</td><td>KTX공기압축기시험기</td><td>1</td><td>고양기지</td><td>금천시스템</td></tr>
+              <tr><td>2009</td><td>보조공기압축기시험기</td><td>1</td><td>고양기지</td><td>금천시스템</td></tr>
+              <tr><td>2008</td><td>쵸파시험기</td><td>1</td><td>군자기지</td><td>서울메트로</td></tr>
+              <tr><td>2008</td><td>대차구동시스템</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>점퍼시험기</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>밀착연결기시험기</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>제동실린더시험기</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>고속전철판도구동장치</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>출입문/PSD제어장치</td><td>1</td><td>철도대학</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>EP 제동시험기수선</td><td>1</td><td>지축기지</td><td>서울메트로</td></tr>
+              <tr><td>2008</td><td>증류수제조기</td><td>1</td><td>김포기지</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>초음파세척기</td><td>1</td><td>김포기지</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>방송장치시험기</td><td>1</td><td>군자기지</td><td>서울메트로</td></tr>
+              <tr><td>2008</td><td>전력변환장치시험기</td><td>1</td><td>고양기지</td><td>코레일</td></tr>
+              <tr><td>2008</td><td>전력변환장치시험기</td><td>1</td><td>부산가야기지</td><td>코레일</td></tr>
+              <tr><td>2008</td><td>내압시험기</td><td>3</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>이동식제동종합시험기</td><td>1</td><td>문산기지</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>제동종합시험기</td><td>1</td><td>분당기지</td><td>코레일</td></tr>
+              <tr><td>2008</td><td>출입문시험기</td><td>1</td><td>분당기지</td><td>샬롬</td></tr>
+              <tr><td>2008</td><td>보조공기압축기시험기</td><td>1</td><td>군자기지</td><td>서울메트로</td></tr>
+              <tr><td>2007</td><td>주전동기 시험기</td><td>1</td><td>신정기지</td><td>샬롬</td></tr>
+              <tr><td>2007</td><td>주 공기압축기시험기</td><td>1</td><td>신정기지</td><td>샬롬</td></tr>
+              <tr><td>2007</td><td>점퍼시험기</td><td>1</td><td>분당기지</td><td>샬롬</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 글로벌 파트너 -->
     <section class="section section-soft">
       <div class="container">
         <div class="section-title">
-          <h2>주요 고객사</h2>
+          <h2>글로벌 파트너</h2>
+          <p>해외 유수 기업의 제품을 국내에 공급합니다</p>
         </div>
         <div class="logo-grid">
-          <div>고객사 A</div>
-          <div>고객사 B</div>
-          <div>고객사 C</div>
-          <div>고객사 D</div>
-          <div>고객사 E</div>
-          <div>고객사 F</div>
+          <div><img src="images/partners/3onedata.jpg" alt="3onedata" loading="lazy"></div>
+          <div><img src="images/partners/amit.jpg" alt="AMiT" loading="lazy"></div>
+          <div><img src="images/partners/bip.jpg" alt="bip technology GmbH" loading="lazy"></div>
+          <div><img src="images/partners/climatemaster.jpg" alt="Climatemaster" loading="lazy"></div>
+          <div><img src="images/partners/danobat.jpg" alt="Danobat" loading="lazy"></div>
+          <div><img src="images/partners/dgtongchuang.jpg" alt="Dgtongchuang" loading="lazy"></div>
+          <div><img src="images/partners/dotsystem.jpg" alt="DOT system" loading="lazy"></div>
+          <div><img src="images/partners/easydur.jpg" alt="Easydur" loading="lazy"></div>
+          <div><img src="images/partners/hansford.jpg" alt="Hansford Sensors" loading="lazy"></div>
+          <div><img src="images/partners/idrc.jpg" alt="IDRC" loading="lazy"></div>
+          <div><img src="images/partners/kaixin.jpg" alt="Kaixin Enterprise" loading="lazy"></div>
+          <div><img src="images/partners/meidensha.jpg" alt="MEIDENSHA" loading="lazy"></div>
+          <div><img src="images/partners/ndtkits.jpg" alt="Ndt-kits" loading="lazy"></div>
+          <div><img src="images/partners/otowa.jpg" alt="OTOWA" loading="lazy"></div>
+          <div><img src="images/partners/pintsch.jpg" alt="PINTSCH TIEFENBACH" loading="lazy"></div>
+          <div><img src="images/partners/railteco.jpg" alt="Railteco" loading="lazy"></div>
+          <div><img src="images/partners/shenhao.jpg" alt="Shenhao" loading="lazy"></div>
+          <div><img src="images/partners/televic.jpg" alt="Televic" loading="lazy"></div>
+          <div><img src="images/partners/tonghui.jpg" alt="Tonghui" loading="lazy"></div>
+          <div><img src="images/partners/trimble.jpg" alt="TRIMBLE" loading="lazy"></div>
+          <div><img src="images/partners/vds.jpg" alt="VDS" loading="lazy"></div>
+          <div><img src="images/partners/wabtec.jpg" alt="Wabtec" loading="lazy"></div>
+          <div><img src="images/partners/yuanxing.jpg" alt="YUANXING" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -76,8 +352,9 @@
   <footer class="footer">
     <div class="container">
       <img src="images/logo.png" alt="(주)엔에스텍" class="footer-logo">
-      <p>(주)엔에스텍 | 대표이사 박현수 | 경기도 성남시 중원구 둔촌대로 545, 207~209호, 211호</p>
-      <p>Tel <a href="tel:031-732-3750">031-732-3750~1</a> | Fax 031-732-3752</p>
+      <p class="footer-links"><a href="privacy.html">개인정보처리방침</a></p>
+      <p>(주)엔에스텍 | 대표이사 박현수 | 경기도 성남시 중원구 둔촌대로 545 (한라시그마밸리) 207~209호, 211호</p>
+      <p>Tel <a href="tel:031-732-3750">031-732-3750~1</a> | Fax 031-732-3752 | Email <a href="mailto:robert@nstek.net">robert@nstek.net</a></p>
       <p>© <span class="year-now"></span> NSTEK. All rights reserved.</p>
     </div>
   </footer>

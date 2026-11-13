@@ -18,3 +18,24 @@ document.querySelectorAll(".nav a").forEach((link) => {
 document.querySelectorAll(".year-now").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
+
+// 납품 실적 표 검색 (실적·고객사 페이지에만 있음)
+const search = document.querySelector("#records-search");
+if (search) {
+  const rows = document.querySelectorAll("#records tbody tr");
+  const count = document.querySelector("#records-count");
+
+  const filter = () => {
+    const keyword = search.value.trim().toLowerCase();
+    let shown = 0;
+    rows.forEach((row) => {
+      const match = row.textContent.toLowerCase().includes(keyword);
+      row.hidden = !match;
+      if (match) shown++;
+    });
+    count.textContent = `총 ${shown}건`;
+  };
+
+  search.addEventListener("input", filter);
+  filter();
+}
